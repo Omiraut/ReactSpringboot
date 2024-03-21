@@ -1,0 +1,17 @@
+package com.javaguid.springboot.exception;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class EmployeeNotFoundAdvice {
+
+	public Map<String, String> exceptionHandler(ResourceNotFoundException exception){
+		Map<String, String> errorMap = new HashMap()<>();
+		errorMap.put("Exception is This:-", exception.getMessage());
+		
+		return errorMap;
+	}
+}

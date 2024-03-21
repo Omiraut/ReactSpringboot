@@ -1,0 +1,5 @@
+package com.javaguid.springboot.exception;
+
+public class EmployeeNotFoundAdvice {
+
+}
